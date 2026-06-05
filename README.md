@@ -1,6 +1,21 @@
 # Finance Billing Analytics
 
-## Overview
+<p align="center">
+  <img src="https://img.shields.io/badge/.NET-8.0-512BD4?logo=.net&logoColor=white&style=for-the-badge" alt=".NET 8.0" />
+  <img src="https://img.shields.io/badge/SQL_Server-LocalDB-CC2927?logo=microsoft-sql-server&logoColor=white&style=for-the-badge" alt="SQL Server" />
+  <img src="https://img.shields.io/badge/Entity_Framework-Core_8-512BD4?style=for-the-badge" alt="EF Core" />
+  <img src="https://img.shields.io/badge/Docker-Supported-2496ED?logo=docker&logoColor=white&style=for-the-badge" alt="Docker" />
+  <img src="https://img.shields.io/badge/CI%2FCD-GitHub_Actions_%26_Azure-2088FF?logo=github-actions&logoColor=white&style=for-the-badge" alt="CI/CD" />
+</p>
+
+<p align="center">
+  <b>Wipro NGA Training Program — Capstone Project</b><br />
+  Designed and Developed by: <b>Giridhar Gopal</b> (GitHub: <a href="https://github.com/Giridhar706">Giridhar706</a>)
+</p>
+
+---
+
+## 🌟 Overview
 
 Finance Billing Analytics is a secure ASP.NET Core-based Finance & Billing Platform designed to manage invoices, payments, revenue tracking, and audit activities. The application helps organizations reduce revenue leakage through secure financial operations, reporting, and analytics.
 
@@ -8,7 +23,7 @@ This solution demonstrates the implementation of ASP.NET Core MVC, ASP.NET Core 
 
 ---
 
-# Business Objective
+# 🎯 Business Objective
 
 Reduce revenue leakage by providing a secure platform for:
 
@@ -20,9 +35,9 @@ Reduce revenue leakage by providing a secure platform for:
 
 ---
 
-# Technology Stack
+# 🛠️ Technology Stack
 
-## Backend
+## 💻 Backend
 
 * ASP.NET Core MVC
 * ASP.NET Core Web API
@@ -30,41 +45,41 @@ Reduce revenue leakage by providing a secure platform for:
 * Entity Framework Core
 * ADO.NET
 
-## Database
+## 🗃️ Database
 
 * Microsoft SQL Server
 * Stored Procedures
 * Triggers
 * SQL Scripts
 
-## Security
+## 🔐 Security
 
 * JWT Authentication
 * Role-Based Authorization
 
-## Testing
+## 🧪 Testing
 
 * xUnit
 * Moq
 
-## DevOps
+## 🚀 DevOps
 
 * Docker
 * GitHub Actions
 
-## Cloud
+## ☁️ Cloud
 
 * Azure App Service (Conceptual)
 * Azure SQL Database (Conceptual)
 
-## AI Modernization
+## 🤖 AI Modernization
 
 * GitHub Copilot
 * MCP AI Agent Concept
 
 ---
 
-# Solution Structure
+# 📂 Solution Structure
 
 ```text
 FinanceBillingAnalytics
@@ -96,29 +111,29 @@ FinanceBillingAnalytics
 
 ---
 
-# Core Features
+# ✨ Core Features
 
-## Invoice Management
+## 🧾 Invoice Management
 
 * Create Invoice
 * Update Invoice
 * Delete Invoice
 * View Invoice Details
 
-## Payment Management
+## 💳 Payment Management
 
 * Record Payments
 * Update Payments
 * Delete Payments
 * View Payment History
 
-## Revenue Analytics
+## 📊 Revenue Analytics
 
 * Revenue Summary Dashboard
 * Stored Procedure Reporting
 * ADO.NET Analytics Integration
 
-## Audit Logging
+## 📝 Audit Logging
 
 * Financial Activity Tracking
 * User Action Monitoring
@@ -127,11 +142,11 @@ FinanceBillingAnalytics
 
 # Security Features
 
-## JWT Authentication
+## 🔐 JWT Authentication
 
 Secure token-based authentication is implemented for API access.
 
-## Role-Based Authorization
+## 🛡️ Role-Based Authorization
 
 Admin users can:
 
@@ -149,32 +164,32 @@ Authenticated users can:
 
 ---
 
-# Database Design
+# 🗄️ Database Design
 
-## Tables
+## 📋 Tables
 
 * Users
 * Invoices
 * Payments
 * AuditLogs
 
-## Stored Procedures
+## ⚙️ Stored Procedures
 
 * sp_GetRevenueSummary
 * sp_GetPaidInvoices
 * sp_GetPaymentDetails
 
-## Triggers
+## 🔄 Triggers
 
-* trg_UpdateInvoiceStatus
+* ⚡ trg_UpdateInvoiceStatus
 
 Automatically updates Invoice Status to Paid after payment insertion.
 
 ---
 
-# Data Access Strategy
+# 📡  Data Access Strategy
 
-## Entity Framework Core
+## 🗄️  Entity Framework Core
 
 Used for:
 
@@ -182,7 +197,7 @@ Used for:
 * Entity Mapping
 * Database Access
 
-## ADO.NET
+## 📊  ADO.NET
 
 Used for:
 
@@ -192,7 +207,7 @@ Used for:
 
 ---
 
-# Testing
+# 🧪 Testing
 
 Unit Testing is implemented using:
 
@@ -208,15 +223,15 @@ Covered Areas:
 
 ---
 
-# API Endpoints
+# 🔌 API Endpoints
 
-## Authentication
+## 🔐 Authentication
 
 ```http
 POST /api/Auth/login
 ```
 
-## Invoice APIs
+## 🧾 Invoice APIs
 
 ```http
 GET    /api/Invoice
@@ -226,7 +241,7 @@ PUT    /api/Invoice/{id}
 DELETE /api/Invoice/{id}
 ```
 
-## Payment APIs
+## 💳  Payment APIs
 
 ```http
 GET    /api/Payment
@@ -238,13 +253,13 @@ DELETE /api/Payment/{id}
 
 ---
 
-# DevOps Strategy
+# 🚀 DevOps Strategy
 
-## Docker
+## 🐳 Docker
 
 Application containerization is implemented using Docker.
 
-## GitHub Actions
+## 🔄 GitHub Actions
 
 CI/CD pipeline stages:
 
@@ -255,7 +270,7 @@ CI/CD pipeline stages:
 
 ---
 
-# Azure Deployment Architecture (Conceptual)
+# ☁️ Azure Deployment Architecture (Conceptual)
 
 ```text
 Developer
@@ -275,9 +290,9 @@ Future deployment can be performed using Azure App Service and Azure SQL Databas
 
 ---
 
-# AI Modernization
+# 🤖 AI Modernization
 
-## GitHub Copilot
+## ✨ GitHub Copilot
 
 Used for:
 
@@ -285,7 +300,7 @@ Used for:
 * Unit Test Generation
 * Boilerplate Code Assistance
 
-## MCP AI Agent Concept
+## 🧠 MCP AI Agent Concept
 
 Future enhancement:
 
@@ -295,7 +310,7 @@ Future enhancement:
 
 ---
 
-# Documentation
+# 📚 Documentation
 
 Project documentation is available in the Documentation folder.
 
@@ -310,9 +325,9 @@ Included Documents:
 
 ---
 
-# User Story Mapping
+# 🗺️ User Story Mapping
 
-## US1 – US2
+## 🎯 US1 – US2
 
 Backend & Core Business Rules
 
@@ -321,7 +336,7 @@ Backend & Core Business Rules
 * Exception Handling
 * Unit Testing
 
-## US3 – US4
+## 🗄️ US3 – US4
 
 Database & Data Access
 
@@ -331,7 +346,7 @@ Database & Data Access
 * ADO.NET
 * EF Core
 
-## US5 – US7
+## 🌐 US5 – US7
 
 Web Application
 
@@ -341,7 +356,7 @@ Web Application
 * Validation
 * Routing
 
-## US8 – US9
+## 🔐 US8 – US9
 
 Web API & Security
 
@@ -349,7 +364,7 @@ Web API & Security
 * JWT Authentication
 * Role-Based Authorization
 
-## US10 – US11
+## ☁️ US10 – US11
 
 Cloud & DevOps
 
@@ -357,14 +372,14 @@ Cloud & DevOps
 * GitHub Actions
 * Azure Deployment Architecture
 
-## US12
+## 🤖 US12
 
 AI Modernization
 
 * GitHub Copilot
 * MCP AI Agent Concept
 
-## US13
+## 📚  US13
 
 Documentation & Submission Assets
 
@@ -375,8 +390,8 @@ Documentation & Submission Assets
 
 ---
 
-# Author
+# 👨‍💻 Author
 
 Giridhar Gopal
 
-Finance Billing Analytics Capstone Project
+🏆 Finance Billing Analytics Capstone Project
