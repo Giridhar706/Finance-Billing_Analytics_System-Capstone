@@ -1,0 +1,44 @@
+﻿@model FinanceBillingAnalytics.Models.Entities.Invoice
+
+<h2>Create Invoice</h2>
+
+<form asp-action="Create">
+
+    <div class="mb-3">
+        <label>Invoice Number</label>
+        <input asp-for="InvoiceNumber" class="form-control" />
+    </div>
+
+    <div class="mb-3">
+        <label>Customer Name</label>
+        <input asp-for="CustomerName" class="form-control" />
+    </div>
+
+    <div class="mb-3">
+        <label>Invoice Date</label>
+        <input asp-for="InvoiceDate" type="date" class="form-control" />
+    </div>
+
+    <div class="mb-3">
+        <label>Due Date</label>
+        <input asp-for="DueDate" type="date" class="form-control" />
+    </div>
+
+    <div class="mb-3">
+        <label>Amount</label>
+        <input asp-for="Amount" class="form-control" />
+    </div>
+
+    <div class="mb-3">
+        <label>Status</label>
+        <select asp-for="Status" class="form-control">
+            <option>Pending</option>
+            <option>Paid</option>
+        </select>
+    </div>
+
+    <button type="submit" class="btn btn-success">
+        Save
+    </button>
+
+</form>

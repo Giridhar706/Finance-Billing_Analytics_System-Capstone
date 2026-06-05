@@ -1,0 +1,148 @@
+{
+  "info": {
+    "_postman_id": "467fbcea-cb36-4c4c-859a-d1d36a902cf9",
+    "name": "Finance Billing Analytics API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "34941699"
+  },
+  "item": [
+    {
+      "name": "Login",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1lIjoiYWRtaW5AZmluYW5jZS5jb20iLCJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3JvbGUiOiJBZG1pbiIsIlVzZXJJZCI6IjEiLCJleHAiOjE3ODA1NzgyNzcsImlzcyI6IkZpbmFuY2VCaWxsaW5nQW5hbHl0aWNzIiwiYXVkIjoiRmluYW5jZUJpbGxpbmdBbmFseXRpY3NVc2VycyJ9.HOH8ND3mj3_uynMer4Ht_Yj774M3nVMpt7kwGb5FKww",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"email\": \"admin@finance.com\",\r\n  \"password\": \"Admin123\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://localhost:7032/api/Auth/login",
+          "protocol": "https",
+          "host": [
+            "localhost"
+          ],
+          "port": "7032",
+          "path": [
+            "api",
+            "Auth",
+            "login"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Get All Invoices",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1lIjoiYWRtaW5AZmluYW5jZS5jb20iLCJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3JvbGUiOiJBZG1pbiIsIlVzZXJJZCI6IjEiLCJleHAiOjE3ODA1NzgyNzcsImlzcyI6IkZpbmFuY2VCaWxsaW5nQW5hbHl0aWNzIiwiYXVkIjoiRmluYW5jZUJpbGxpbmdBbmFseXRpY3NVc2VycyJ9.HOH8ND3mj3_uynMer4Ht_Yj774M3nVMpt7kwGb5FKww",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "https://localhost:7032/api/Invoice",
+          "protocol": "https",
+          "host": [
+            "localhost"
+          ],
+          "port": "7032",
+          "path": [
+            "api",
+            "Invoice"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Get Invoice By Id",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1lIjoiYWRtaW5AZmluYW5jZS5jb20iLCJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3JvbGUiOiJBZG1pbiIsIlVzZXJJZCI6IjEiLCJleHAiOjE3ODA1NzgyNzcsImlzcyI6IkZpbmFuY2VCaWxsaW5nQW5hbHl0aWNzIiwiYXVkIjoiRmluYW5jZUJpbGxpbmdBbmFseXRpY3NVc2VycyJ9.HOH8ND3mj3_uynMer4Ht_Yj774M3nVMpt7kwGb5FKww",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "POST",
+        "header": [],
+        "url": {
+          "raw": "https://localhost:7032/api/Invoice",
+          "protocol": "https",
+          "host": [
+            "localhost"
+          ],
+          "port": "7032",
+          "path": [
+            "api",
+            "Invoice"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Create Invoice",
+      "request": {
+        "method": "GET",
+        "header": []
+      },
+      "response": []
+    },
+    {
+      "name": "Get Payments",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1lIjoiYWRtaW5AZmluYW5jZS5jb20iLCJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3JvbGUiOiJBZG1pbiIsIlVzZXJJZCI6IjEiLCJleHAiOjE3ODA1NzgyNzcsImlzcyI6IkZpbmFuY2VCaWxsaW5nQW5hbHl0aWNzIiwiYXVkIjoiRmluYW5jZUJpbGxpbmdBbmFseXRpY3NVc2VycyJ9.HOH8ND3mj3_uynMer4Ht_Yj774M3nVMpt7kwGb5FKww",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "https://localhost:7032/api/Payment",
+          "protocol": "https",
+          "host": [
+            "localhost"
+          ],
+          "port": "7032",
+          "path": [
+            "api",
+            "Payment"
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}

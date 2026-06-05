@@ -1,0 +1,210 @@
+﻿@model FinanceBillingAnalytics.Models.ViewModels.DashboardViewModel
+
+@{
+    ViewData["Title"] = "Dashboard";
+}
+
+<div class="mb-4">
+    <h2 class="fw-bold">
+        Hello Admin 👋
+    </h2>
+
+    <p class="text-muted">
+        Manage invoices, payments and revenue analytics efficiently.
+    </p>
+</div>
+
+<div class="row g-4">
+
+    <div class="col-md-3">
+        <div class="card shadow-lg border-0 rounded-4">
+            <div class="card-body text-center">
+                <i class="bi bi-receipt text-primary fs-1"></i>
+                <h5 class="mt-2">Total Invoices</h5>
+                <h2 class="fw-bold">@Model.TotalInvoices</h2>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-3">
+        <div class="card shadow-lg border-0 rounded-4">
+            <div class="card-body text-center">
+                <i class="bi bi-cash-stack text-success fs-1"></i>
+                <h5 class="mt-2">Total Revenue</h5>
+                <h2 class="fw-bold">₹ @Model.TotalRevenue</h2>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-3">
+        <div class="card shadow-lg border-0 rounded-4">
+            <div class="card-body text-center">
+                <i class="bi bi-credit-card text-warning fs-1"></i>
+                <h5 class="mt-2">Total Payments</h5>
+                <h2 class="fw-bold">@Model.TotalPayments</h2>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-3">
+        <div class="card shadow-lg border-0 rounded-4">
+            <div class="card-body text-center">
+                <i class="bi bi-check-circle-fill text-danger fs-1"></i>
+                <h5 class="mt-2">Paid Invoices</h5>
+                <h2 class="fw-bold">@Model.PaidInvoices</h2>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<div class="row mt-5">
+
+    <div class="col-md-8">
+
+        <div class="card shadow border-0 rounded-4">
+
+            <div class="card-body">
+
+                <h4 class="mb-3">
+                    Revenue Analytics
+                </h4>
+
+                <canvas id="revenueChart"></canvas>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="col-md-4">
+
+        <div class="card shadow border-0 rounded-4">
+
+            <div class="card-body">
+
+                <h4 class="mb-3">
+                    Recent Activities
+                </h4>
+
+                <ul class="list-group">
+
+                    <li class="list-group-item">
+                        Invoice Created
+                    </li>
+
+                    <li class="list-group-item">
+                        Payment Received
+                    </li>
+
+                    <li class="list-group-item">
+                        Revenue Report Generated
+                    </li>
+
+                    <li class="list-group-item">
+                        Audit Log Updated
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<div class="card shadow border-0 rounded-4 mt-5">
+
+    <div class="card-body">
+
+        <h4>Business Objective</h4>
+
+        <p>
+            The Finance Billing Analytics System helps organizations
+            manage invoices, track payments, monitor revenue,
+            improve financial visibility and reduce revenue leakage.
+        </p>
+
+        <hr />
+
+        <h4>Technologies Used</h4>
+
+        <div class="row">
+
+            <div class="col-md-4">
+                <ul>
+                    <li>ASP.NET Core MVC</li>
+                    <li>ASP.NET Core Web API</li>
+                    <li>Entity Framework Core</li>
+                </ul>
+            </div>
+
+            <div class="col-md-4">
+                <ul>
+                    <li>SQL Server</li>
+                    <li>Repository Pattern</li>
+                    <li>JWT Authentication</li>
+                </ul>
+            </div>
+
+            <div class="col-md-4">
+                <ul>
+                    <li>AJAX</li>
+                    <li>Docker</li>
+                    <li>GitHub Actions</li>
+                </ul>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+@section Scripts {
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <script>
+
+        const ctx =
+        document.getElementById('revenueChart');
+
+        new Chart(ctx,
+        {
+        type: 'line',
+        data:
+        {
+        labels:
+        [
+        'Jan',
+        'Feb',
+        'Mar',
+        'Apr',
+        'May',
+        'Jun'
+        ],
+        datasets:
+        [
+        {
+        label: 'Revenue',
+        data:
+        [
+        12000,
+        15000,
+        18000,
+        22000,
+        26000,
+        31000
+        ]
+        }
+        ]
+        }
+        });
+
+    </script>
+
+}

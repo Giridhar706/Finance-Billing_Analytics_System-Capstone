@@ -1,0 +1,24 @@
+﻿
+Prompt 1:
+Generate ASP.NET Core MVC CRUD operations for Invoice entity using Repository Pattern.
+
+Prompt 2:
+Generate JWT Authentication in ASP.NET Core Web API.
+
+Prompt 3:
+Generate xUnit and Moq test cases for InvoiceService business rule validation.
+
+Prompt 4:
+Create Dockerfile for ASP.NET Core MVC application using multi-stage build.
+
+Prompt 5:
+Generate GitHub Actions YAML pipeline for .NET 8 restore, build, test and publish.
+
+Prompt 6:
+Generate ADO.NET repository implementation for revenue analytics dashboard.
+
+Prompt 7:
+Generate Swagger JWT configuration for ASP.NET Core Web API.
+
+Prompt 8:
+Generate repository pattern implementation using Entity Framework Core.

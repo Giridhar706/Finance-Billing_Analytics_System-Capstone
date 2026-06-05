@@ -1,0 +1,37 @@
+﻿@model FinanceBillingAnalytics.Models.Entities.Payment
+
+<h2>Add Payment</h2>
+
+<form asp-action="Create">
+
+    <div class="mb-3">
+        <label>Invoice Id</label>
+        <input asp-for="InvoiceId"
+               class="form-control" />
+    </div>
+
+    <div class="mb-3">
+        <label>Amount Paid</label>
+        <input asp-for="AmountPaid"
+               class="form-control" />
+    </div>
+
+    <div class="mb-3">
+        <label>Payment Date</label>
+        <input asp-for="PaymentDate"
+               type="date"
+               class="form-control" />
+    </div>
+
+    <div class="mb-3">
+        <label>Payment Method</label>
+        <input asp-for="PaymentMethod"
+               class="form-control" />
+    </div>
+
+    <button type="submit"
+            class="btn btn-success">
+        Save
+    </button>
+
+</form>
