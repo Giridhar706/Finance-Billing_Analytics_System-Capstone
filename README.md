@@ -140,7 +140,7 @@ FinanceBillingAnalytics
 
 ---
 
-# Security Features
+# ✨ Security Features
 
 ## 🔐 JWT Authentication
 
@@ -392,6 +392,7 @@ Documentation & Submission Assets
 
 # 👨‍💻 Author
 
-Giridhar Gopal
-
-🏆 Finance Billing Analytics Capstone Project
+- **Name**: Giridhar Gopal
+- **GitHub**: [@Giridhar706](https://github.com/Giridhar706)
+- **Program**: Wipro NGA Training (Capstone Project)
+- **Role**: Full-Stack .NET Developer
